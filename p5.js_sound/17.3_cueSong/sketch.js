@@ -3,9 +3,9 @@
 // http://patreon.com/codingtrain
 // Code for: https://youtu.be/SfA5CghXw18
 
-var song;
-var button;
-var jumpButton;
+let song;
+let button;
+let jumpButton;
 
 function setup() {
   createCanvas(200, 200);
@@ -26,8 +26,11 @@ function changeBackground(col) {
 }
 
 function jumpSong() {
-  var len = song.duration();
-  var t = 0; //random(len);
+  let dur = song.duration();
+  let ct = song.currentTime();
+  console.log('dur', dur, 'ct', ct);
+  // let t = random(dur);
+  let t = 0; //random(len);
   console.log(t);
   song.jump(t);
 }
