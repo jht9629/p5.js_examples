@@ -2,6 +2,8 @@
 
 Extracted from https://github.com/CodingTrain/website/tree/main/Tutorials/P5JS
 
-Added scales-amp
+[p5.js_sound/17.10_radialGraph](p5.js_sound/17.10_radialGraph)
 
-Added thecity_nyc-fade
+[scales-amp](scales-amp)
+
+[thecity_nyc-fade](thecity_nyc-fade)
