@@ -1,0 +1,110 @@
+[
+  {
+    "name": "wavemaker",
+    "_id": "fb7Kz-whg",
+    "updatedAt": "2021-09-09T00:07:48.862Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "61394ee688c0ed79e9406023",
+          "61394ee688c0ed79e9406022",
+          "61394ee688c0ed79e9406024"
+        ],
+        "fileType": "folder",
+        "_id": "61394ee688c0ed79e9406025",
+        "createdAt": "2021-09-09T00:07:48.862Z",
+        "updatedAt": "2021-09-09T00:07:48.862Z",
+        "id": "61394ee688c0ed79e9406025"
+      },
+      {
+        "name": "sketch.js",
+        "content": "let t = 0; // time variable\n\nfunction setup() {\n  createCanvas(600, 600);\n  // Make smaller canvas\n  // createCanvas(300, 200);\n  noStroke();\n  fill(40, 200, 40);\n}\n\nfunction draw() {\n  background(10, 10); // translucent background (creates trails)\n\n  // make a x and y grid of ellipses\n  for (let x = 0; x <= width; x = x + 30) {\n    for (let y = 0; y <= height; y = y + 30) {\n      // starting point of each circle depends on mouse position\n      const xAngle = map(mouseX, 0, width, -4 * PI, 4 * PI, true);\n      const yAngle = map(mouseY, 0, height, -4 * PI, 4 * PI, true);\n      // and also varies based on the particle's location\n      const angle = xAngle * (x / width) + yAngle * (y / height);\n\n      // each particle moves in a circle\n      const myX = x + 20 * cos(2 * PI * t + angle);\n      const myY = y + 20 * sin(2 * PI * t + angle);\n\n      ellipse(myX, myY, 10); // draw particle\n    }\n  }\n\n  t = t + 0.01; // update time\n}\n\n\n// https://p5js.org/examples/interaction-wavemaker.html\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "61394ee688c0ed79e9406022",
+        "isSelectedFile": true,
+        "createdAt": "2021-09-09T00:07:48.862Z",
+        "updatedAt": "2021-09-09T00:07:48.862Z",
+        "id": "61394ee688c0ed79e9406022"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "61394ee688c0ed79e9406023",
+        "createdAt": "2021-09-09T00:07:48.862Z",
+        "updatedAt": "2021-09-09T00:07:48.862Z",
+        "id": "61394ee688c0ed79e9406023"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "61394ee688c0ed79e9406024",
+        "createdAt": "2021-09-09T00:07:48.862Z",
+        "updatedAt": "2021-09-09T00:07:48.862Z",
+        "id": "61394ee688c0ed79e9406024"
+      }
+    ],
+    "createdAt": "2021-09-09T00:03:04.726Z",
+    "id": "fb7Kz-whg"
+  },
+  {
+    "name": "wavemaker bigger",
+    "_id": "yDFyRq6AK",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6139505988c0ed79e9406027",
+          "6139505988c0ed79e9406028",
+          "6139505988c0ed79e9406029"
+        ],
+        "fileType": "folder",
+        "_id": "6139505988c0ed79e9406026",
+        "createdAt": "2021-09-09T00:09:28.192Z",
+        "updatedAt": "2021-09-09T00:09:28.192Z",
+        "id": "6139505988c0ed79e9406026"
+      },
+      {
+        "name": "sketch.js",
+        "content": "let t = 0; // time variable\n\nfunction setup() {\n  // createCanvas(600, 600);\n  // Make bigger canvas\n  createCanvas(900, 800);\n  noStroke();\n  fill(40, 200, 40);\n}\n\nfunction draw() {\n  background(10, 10); // translucent background (creates trails)\n\n  // make a x and y grid of ellipses\n  for (let x = 0; x <= width; x = x + 30) {\n    for (let y = 0; y <= height; y = y + 30) {\n      // starting point of each circle depends on mouse position\n      const xAngle = map(mouseX, 0, width, -4 * PI, 4 * PI, true);\n      const yAngle = map(mouseY, 0, height, -4 * PI, 4 * PI, true);\n      // and also varies based on the particle's location\n      const angle = xAngle * (x / width) + yAngle * (y / height);\n\n      // each particle moves in a circle\n      const myX = x + 20 * cos(2 * PI * t + angle);\n      const myY = y + 20 * sin(2 * PI * t + angle);\n\n      ellipse(myX, myY, 10); // draw particle\n    }\n  }\n\n  t = t + 0.01; // update time\n}\n\n\n// https://p5js.org/examples/interaction-wavemaker.html\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6139505988c0ed79e9406028",
+        "isSelectedFile": true,
+        "createdAt": "2021-09-09T00:09:28.192Z",
+        "updatedAt": "2021-09-09T00:09:28.192Z",
+        "id": "6139505988c0ed79e9406028"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6139505988c0ed79e9406027",
+        "createdAt": "2021-09-09T00:09:28.192Z",
+        "updatedAt": "2021-09-09T00:09:28.192Z",
+        "id": "6139505988c0ed79e9406027"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6139505988c0ed79e9406029",
+        "createdAt": "2021-09-09T00:09:28.192Z",
+        "updatedAt": "2021-09-09T00:09:28.192Z",
+        "id": "6139505988c0ed79e9406029"
+      }
+    ],
+    "createdAt": "2021-09-09T00:07:53.385Z",
+    "updatedAt": "2021-09-09T00:09:28.192Z",
+    "id": "yDFyRq6AK"
+  }
+]
