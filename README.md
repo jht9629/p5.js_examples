@@ -12,6 +12,8 @@ Extracted from https://github.com/CodingTrain/website/tree/main/Tutorials/P5JS
 
 [loadJSON_c_data](loadJSON_c_data)
 
+[posenet](posenet)
+
 ## Produce listing for sketches and collections
 
 node nod/asketches_list.js
